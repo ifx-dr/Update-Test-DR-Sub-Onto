@@ -6,7 +6,6 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:ecsel-dr-AH="http://www.w3id.org/ecsel-dr-AH#"
      xmlns:Arrowhead_Framework="http://www.w3id.org/ecsel-dr-AH#">
     <owl:Ontology rdf:about="http://www.w3id.org/ecsel-dr-AH">
         <rdfs:comment xml:lang="en">Ontology &quot;Arrowhead&quot; for description and semantic documentation of the Arrowhead framework. 
@@ -37,7 +36,7 @@ Authors: Members of Productive 4.0 WP1 and WP7 (Task 7.2):
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_local_cloud"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_Local_Cloud"/>
                     <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Local_network"/>
                 </owl:unionOf>
             </owl:Class>
@@ -54,8 +53,8 @@ Authors: Members of Productive 4.0 WP1 and WP7 (Task 7.2):
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_documentation"/>
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_Documentation"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -97,8 +96,8 @@ Authors: Members of Productive 4.0 WP1 and WP7 (Task 7.2):
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_documentation"/>
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_Documentation"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -229,7 +228,7 @@ THEN IDD_S should contain a documentation of M.</rdfs:comment>
     <!-- http://www.w3id.org/ecsel-dr-AH#documentsServicePart -->
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-AH#documentsServicePart">
-        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_document"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_Document"/>
     </owl:ObjectProperty>
     
 
@@ -270,12 +269,12 @@ THEN IDD_S should contain a documentation of M.</rdfs:comment>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_documentation"/>
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_Documentation"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_document"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_Document"/>
     </owl:ObjectProperty>
     
 
@@ -336,7 +335,7 @@ THEN IDD_S should contain a documentation of M.</rdfs:comment>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_local_cloud"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_Local_Cloud"/>
                     <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Local_network"/>
                 </owl:unionOf>
             </owl:Class>
@@ -360,8 +359,8 @@ THEN IDD_S should contain a documentation of M.</rdfs:comment>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_documentation"/>
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_Documentation"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -402,12 +401,12 @@ THEN IDD_S should contain a documentation of M.</rdfs:comment>
     <!-- http://www.w3id.org/ecsel-dr-AH#isPartOf -->
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-AH#isPartOf">
-        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_document"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_Document"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_documentation"/>
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_Documentation"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -458,8 +457,8 @@ THEN IDD_S should contain a documentation of M.</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-AH#isReferredToBy">
         <owl:inverseOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#refersTo"/>
-        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_document"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_document"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_Document"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_Document"/>
     </owl:ObjectProperty>
     
 
@@ -469,7 +468,7 @@ THEN IDD_S should contain a documentation of M.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-AH#isServiceDocumentedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#isDocumentedBy"/>
         <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_documentation"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_Documentation"/>
     </owl:ObjectProperty>
     
 
@@ -490,7 +489,7 @@ THEN IDD_S should contain a documentation of M.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-AH#isSystemDocumentedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#isDocumentedBy"/>
         <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-AH#Software_system"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
     </owl:ObjectProperty>
     
 
@@ -526,8 +525,8 @@ If it is needed, object properties with other names can be added and stated to b
     <!-- http://www.w3id.org/ecsel-dr-AH#refersTo -->
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/ecsel-dr-AH#refersTo">
-        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_document"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_document"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_Document"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_Document"/>
         <rdfs:comment xml:lang="en">describes the relation between two documentation documents that one document refers to another document.
 To our best knowledge, the following relations hold between different types of documentation documents: 
 - an IDD refers to exactly one SD.
@@ -650,7 +649,7 @@ References to SPs are not necessarily unique for an IDD. That is, different meth
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
                     <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#Data_format"/>
                 </owl:unionOf>
             </owl:Class>
@@ -898,6 +897,24 @@ Purpose: provides an unique identifier for a device.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_SD">
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_service_SD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/ecsel-dr-AH#AH_Local_Cloud -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_Local_Cloud">
+        <rdfs:comment xml:lang="en">An Arrowhead Local Cloud consists of one or several devices which are connected by an appropriate communication technology (typically a TCP/IP based local network on arbitrary wired or wireless data link and media access layer). 
+One instance of each of the three mandatory AH core systems is running on one of the devices. 
+On each device at least one AH system is running offering and/or consuming AH services.</rdfs:comment>
+        <rdfs:comment xml:lang="de">An Arrowhead Local Cloud is a self-contained network with the three mandatory core systems deployed and at least one application system deployed. 
+(Source: Arrowhead Device Registry Presentation 09/2017)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Remark HB (2019-03-25): 
+the relation between a local network and an AH local cloud should be discussed in more detail. 
+Sample questions: 
+- must all devices of an AH local cloud be part of one local network? Or can an AH local cloud be spread over different local networks? (Assumption: all devices must be part of the same local network. Justification??)
+- Same question for subnets. Large automation systems are often devided into several subnets. Is it possible that an AH local cloud spreads over several subnets?
+- What is the role of the domain in this context? What is the relation between domain (in sense of IP protocol) and a local network? Should the questions above better be asked for domains instead for local networks?</rdfs:comment>
     </owl:Class>
     
 
@@ -1248,12 +1265,6 @@ Arriwhead Core Systems can be distinguished in Arrowhead Mandatory Core Systems 
     
 
 
-    <!-- http://www.w3id.org/ecsel-dr-AH#AH_local_cloud -->
-
-    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_local_cloud"/>
-    
-
-
     <!-- http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_service -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_service">
@@ -1315,7 +1326,7 @@ While the class AH_mandatory_core_service contains the mandatory core services o
     <!-- http://www.w3id.org/ecsel-dr-AH#AH_service_documentation -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_documentation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_Documentation"/>
     </owl:Class>
     
 
@@ -1323,7 +1334,7 @@ While the class AH_mandatory_core_service contains the mandatory core services o
     <!-- http://www.w3id.org/ecsel-dr-AH#AH_service_documentation_document -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation_document">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_document"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_Document"/>
         <rdfs:comment xml:lang="de">Document belonging to the documentation of an Arrowhead Service. 
 There are four types of documents for Arrowhead service documentations: 
 - Service Description
@@ -1349,7 +1360,7 @@ That is, CP and SP are useful if different service implementations use the same 
     <!-- http://www.w3id.org/ecsel-dr-AH#AH_system_documentation -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
     </owl:Class>
     
 
@@ -1357,7 +1368,7 @@ That is, CP and SP are useful if different service implementations use the same 
     <!-- http://www.w3id.org/ecsel-dr-AH#AH_system_documentation_document -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation_document">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_document"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_Document"/>
     </owl:Class>
     
 
@@ -1365,7 +1376,7 @@ That is, CP and SP are useful if different service implementations use the same 
     <!-- http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
     </owl:Class>
     
 
@@ -1373,7 +1384,7 @@ That is, CP and SP are useful if different service implementations use the same 
     <!-- http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation_document -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation_document">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_document"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Documentation_Document"/>
     </owl:Class>
     
 
@@ -1394,18 +1405,18 @@ That is, CP and SP are useful if different service implementations use the same 
     
 
 
-    <!-- http://www.w3id.org/ecsel-dr-AH#Communication_security_mechanism -->
+    <!-- http://www.w3id.org/ecsel-dr-AH#Communication_Technology -->
 
-    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Communication_security_mechanism">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
-        <rdfs:comment>corresponds to a part of OSI layer 5</rdfs:comment>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
     
 
 
-    <!-- http://www.w3id.org/ecsel-dr-AH#Communication_technology -->
+    <!-- http://www.w3id.org/ecsel-dr-AH#Communication_security_mechanism -->
 
-    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Communication_security_mechanism">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
+        <rdfs:comment>corresponds to a part of OSI layer 5</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1428,7 +1439,7 @@ The concept constrained device was introduced in the context of the Internet of 
     <!-- http://www.w3id.org/ecsel-dr-AH#Data_link_and_media_access_technology -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Data_link_and_media_access_technology">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdfs:comment>corresponds to OSI layer 1 and 2 technologies, like Ethernet, WLAN (802.11), WPAN (802.15.4), EtherCAT, ProfiNet, ...</rdfs:comment>
     </owl:Class>
     
@@ -1450,16 +1461,16 @@ The concept constrained device was introduced in the context of the Internet of 
     
 
 
-    <!-- http://www.w3id.org/ecsel-dr-AH#Documentation_document -->
+    <!-- http://www.w3id.org/ecsel-dr-AH#Documentation_Document -->
 
-    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Documentation_document"/>
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Documentation_Document"/>
     
 
 
     <!-- http://www.w3id.org/ecsel-dr-AH#End-to-End_communication_technology -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#End-to-End_communication_technology">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
     </owl:Class>
     
 
@@ -1529,7 +1540,7 @@ The concept constrained device was introduced in the context of the Internet of 
     <!-- http://www.w3id.org/ecsel-dr-AH#Point-to-Point_communication_technology -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Point-to-Point_communication_technology">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdfs:comment>corresponds to OSI layer 3, e.g. IPv4 or IPv6</rdfs:comment>
     </owl:Class>
     
@@ -1604,9 +1615,9 @@ The concept constrained device was introduced in the context of the Internet of 
     
 
 
-    <!-- http://www.w3id.org/ecsel-dr-AH#Service_documentation -->
+    <!-- http://www.w3id.org/ecsel-dr-AH#Service_Documentation -->
 
-    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_documentation"/>
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_Documentation"/>
     
 
 
@@ -1676,6 +1687,12 @@ The concept constrained device was introduced in the context of the Internet of 
     
 
 
+    <!-- http://www.w3id.org/ecsel-dr-AH#System_Documentation -->
+
+    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
+    
+
+
     <!-- http://www.w3id.org/ecsel-dr-AH#System_WebApplicationDescription_WADL -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#System_WebApplicationDescription_WADL">
@@ -1692,12 +1709,6 @@ Lawrence Mandel (29 May 2008). &quot;Describe REST Web services with WSDL 2.0: A
     
 
 
-    <!-- http://www.w3id.org/ecsel-dr-AH#System_documentation -->
-
-    <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
-    
-
-
     <!-- http://www.w3id.org/ecsel-dr-AH#Tablet_computer -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Tablet_computer">
@@ -1709,7 +1720,7 @@ Lawrence Mandel (29 May 2008). &quot;Describe REST Web services with WSDL 2.0: A
     <!-- http://www.w3id.org/ecsel-dr-AH#Transfer_protocol -->
 
     <owl:Class rdf:about="http://www.w3id.org/ecsel-dr-AH#Transfer_protocol">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdfs:comment>corresponds to OSI layers 6 and 7</rdfs:comment>
     </owl:Class>
     
@@ -1733,7 +1744,7 @@ Lawrence Mandel (29 May 2008). &quot;Describe REST Web services with WSDL 2.0: A
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_service"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service"/>
-        <ecsel-dr-AH:isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_Documentation"/>
+        <isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -1742,7 +1753,7 @@ Lawrence Mandel (29 May 2008). &quot;Describe REST Web services with WSDL 2.0: A
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_Documentation">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_documentation"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_Documentation"/>
         <rdfs:comment xml:lang="en">Documentation of the Arrowhead core service Authentication and Authorization</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -1752,8 +1763,8 @@ Lawrence Mandel (29 May 2008). &quot;Describe REST Web services with WSDL 2.0: A
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_IDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_IDD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_Documentation"/>
-        <ecsel-dr-AH:refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_SD"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_Documentation"/>
+        <refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_SD"/>
     </owl:NamedIndividual>
     
 
@@ -1762,7 +1773,7 @@ Lawrence Mandel (29 May 2008). &quot;Describe REST Web services with WSDL 2.0: A
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_SD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_SD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_Documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -1772,9 +1783,9 @@ Lawrence Mandel (29 May 2008). &quot;Describe REST Web services with WSDL 2.0: A
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_core_system"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_system"/>
-        <ecsel-dr-AH:isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_Documentation"/>
-        <ecsel-dr-AH:produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService"/>
-        <ecsel-dr-AH:produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService"/>
+        <isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_Documentation"/>
+        <produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService"/>
+        <produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService"/>
         <rdfs:comment xml:lang="en">Authorization System manages authentication and authorization (AA) tasks and covers other security-related issues as well (e.g. certificate handling)
 Authentication and Authorization (AA) system based on X509 certificates
 Authentication, Authorization and Accounting (AAA) system, based on radius tickets.</rdfs:comment>
@@ -1795,8 +1806,8 @@ Authentication, Authorization and Accounting (AAA) system, based on radius ticke
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_SySD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_SySD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_Documentation"/>
-        <ecsel-dr-AH:refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_IDD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_Documentation"/>
+        <refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_IDD"/>
     </owl:NamedIndividual>
     
 
@@ -1805,8 +1816,8 @@ Authentication, Authorization and Accounting (AAA) system, based on radius ticke
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_SySDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_SysDD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_Documentation"/>
-        <ecsel-dr-AH:refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_SySD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_Documentation"/>
+        <refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_SySD"/>
         <rdfs:comment>System Design Description of the Arrowhead Autentication and Authorization System. 
 Will describe the implementation of the Auth system in a specific version. 
 Can be concretisized for a specific instance of this system in a concrete Arrowhead Local Cloud. In this case, information on the concrete device which hosts the system (e.g. the IP address of the device) could be added to this document.</rdfs:comment>
@@ -1818,7 +1829,7 @@ Can be concretisized for a specific instance of this system in a concrete Arrowh
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_service"/>
-        <ecsel-dr-AH:hasInformationModel rdf:resource="http://www.w3id.org/ecsel-dr-AH#DeviceRecord"/>
+        <hasInformationModel rdf:resource="http://www.w3id.org/ecsel-dr-AH#DeviceRecord"/>
         <rdfs:comment xml:lang="en">The DeviceDiscovery service is used to register and unregister devices, their systems, as well as find devices among the registered devices in the DeviceRegistry system.
 In order to allow service discovery, system administration, and device mappings there is a need to uniquely define identifiers to the devices: 
 - DeviceID key
@@ -1833,7 +1844,7 @@ In order to allow service discovery, system administration, and device mappings 
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_Documentation">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
-        <ecsel-dr-AH:documents rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService"/>
+        <documents rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService"/>
     </owl:NamedIndividual>
     
 
@@ -1842,8 +1853,8 @@ In order to allow service discovery, system administration, and device mappings 
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_IDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_IDD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_Documentation"/>
-        <ecsel-dr-AH:refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_SD"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_Documentation"/>
+        <refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_SD"/>
     </owl:NamedIndividual>
     
 
@@ -1852,7 +1863,7 @@ In order to allow service discovery, system administration, and device mappings 
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_SD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_SD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_Documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -1861,8 +1872,8 @@ In order to allow service discovery, system administration, and device mappings 
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_system"/>
-        <ecsel-dr-AH:isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_Documentation"/>
-        <ecsel-dr-AH:produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService"/>
+        <isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_Documentation"/>
+        <produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService"/>
         <rdfs:comment>The DeviceRegistry system provides a storage of all active devices registered within an Arrowhead local cloud, metadata of the devices, and the registered systems to create a chain of trust from a hardware device to a hosted software system. 
 The devices within the local cloud should be registered within the DeviceRegistry by using the DeviceDiscovery service.</rdfs:comment>
     </owl:NamedIndividual>
@@ -1881,8 +1892,8 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_SySD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_SySD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_Documentation"/>
-        <ecsel-dr-AH:refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_IDD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_Documentation"/>
+        <refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_IDD"/>
     </owl:NamedIndividual>
     
 
@@ -1891,8 +1902,8 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_SySDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_SySDD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_Documentation"/>
-        <ecsel-dr-AH:refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_SySD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_Documentation"/>
+        <refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_SySD"/>
     </owl:NamedIndividual>
     
 
@@ -1901,9 +1912,9 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_system"/>
-        <ecsel-dr-AH:isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_Documentation"/>
-        <ecsel-dr-AH:produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService"/>
-        <ecsel-dr-AH:produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService"/>
+        <isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_Documentation"/>
+        <produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService"/>
+        <produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService"/>
         <rdfs:label xml:lang="en">Gatekeeper</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1921,9 +1932,9 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_SySD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_SySD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_Documentation"/>
-        <ecsel-dr-AH:refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_IDD"/>
-        <ecsel-dr-AH:refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_IDD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_Documentation"/>
+        <refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_IDD"/>
+        <refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_IDD"/>
     </owl:NamedIndividual>
     
 
@@ -1932,8 +1943,8 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_SySDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_SySDD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_Documentation"/>
-        <ecsel-dr-AH:refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_SySD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_Documentation"/>
+        <refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_SySD"/>
     </owl:NamedIndividual>
     
 
@@ -1942,9 +1953,9 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_system"/>
-        <ecsel-dr-AH:isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_Documentation"/>
-        <ecsel-dr-AH:produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService"/>
-        <ecsel-dr-AH:produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService"/>
+        <isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_Documentation"/>
+        <produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService"/>
+        <produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService"/>
     </owl:NamedIndividual>
     
 
@@ -1961,7 +1972,7 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_SySD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_SySD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_Documentation"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -1970,7 +1981,7 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_SySDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_SySDD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_Documentation"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -1987,7 +1998,7 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_Documentation">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
-        <ecsel-dr-AH:documents rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService"/>
+        <documents rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService"/>
     </owl:NamedIndividual>
     
 
@@ -1996,8 +2007,8 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_IDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_IDD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_Documentation"/>
-        <ecsel-dr-AH:refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_SD"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_Documentation"/>
+        <refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_SD"/>
     </owl:NamedIndividual>
     
 
@@ -2006,7 +2017,7 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_SD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_SD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_Documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2031,8 +2042,8 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_IDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_IDD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_Documentation"/>
-        <ecsel-dr-AH:refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_SD"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_Documentation"/>
+        <refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_SD"/>
     </owl:NamedIndividual>
     
 
@@ -2041,7 +2052,7 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_SD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_SD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_Documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2051,8 +2062,8 @@ The devices within the local cloud should be registered within the DeviceRegistr
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_core_service"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_service"/>
-        <ecsel-dr-AH:hasMethod rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method_ServiceRequestForm"/>
-        <ecsel-dr-AH:isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_Documentation"/>
+        <hasMethod rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method_ServiceRequestForm"/>
+        <isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2069,8 +2080,8 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_IDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_IDD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_Documentation"/>
-        <ecsel-dr-AH:refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_SD"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_Documentation"/>
+        <refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_SD"/>
     </owl:NamedIndividual>
     
 
@@ -2079,7 +2090,7 @@ The devices within the local cloud should be registered within the DeviceRegistr
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_SD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_SD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_Documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2089,9 +2100,9 @@ The devices within the local cloud should be registered within the DeviceRegistr
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_core_system"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_system"/>
-        <ecsel-dr-AH:isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_Documentation"/>
-        <ecsel-dr-AH:produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService"/>
-        <ecsel-dr-AH:produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService"/>
+        <isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_Documentation"/>
+        <produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService"/>
+        <produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService"/>
         <rdfs:comment xml:lang="en">Orchestrator instruments each system in the cloud and guides systems on where to connect and what to consume
 Responsible for creating the system of systems (SoS) orchestrating
 States which consumer system exchanges services with which producer systems</rdfs:comment>
@@ -2104,7 +2115,7 @@ States which consumer system exchanges services with which producer systems</rdf
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_Documentation">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation"/>
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2113,8 +2124,8 @@ States which consumer system exchanges services with which producer systems</rdf
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_SySD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_SySD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_Documentation"/>
-        <ecsel-dr-AH:refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_IDD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_Documentation"/>
+        <refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_IDD"/>
     </owl:NamedIndividual>
     
 
@@ -2123,8 +2134,8 @@ States which consumer system exchanges services with which producer systems</rdf
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_SySDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_SysDD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_Documentation"/>
-        <ecsel-dr-AH:refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_SySD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_Documentation"/>
+        <refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_SySD"/>
     </owl:NamedIndividual>
     
 
@@ -2134,7 +2145,7 @@ States which consumer system exchanges services with which producer systems</rdf
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_core_service"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_service"/>
-        <ecsel-dr-AH:isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_Documentation"/>
+        <isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2151,8 +2162,8 @@ States which consumer system exchanges services with which producer systems</rdf
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_IDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_IDD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_Documentation"/>
-        <ecsel-dr-AH:refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_SD"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_Documentation"/>
+        <refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_SD"/>
     </owl:NamedIndividual>
     
 
@@ -2161,7 +2172,7 @@ States which consumer system exchanges services with which producer systems</rdf
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_SD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_SD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_Documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2172,8 +2183,8 @@ States which consumer system exchanges services with which producer systems</rdf
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_core_system"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_system"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system"/>
-        <ecsel-dr-AH:isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_Documentation"/>
-        <ecsel-dr-AH:produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService"/>
+        <isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_Documentation"/>
+        <produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService"/>
         <rdfs:comment xml:lang="en">Service Registry stores all the systems that are currently available and their service offerings
 Keeps track of all active produced services within the local cloud
 Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
@@ -2187,7 +2198,7 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_Documentation">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation"/>
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2196,8 +2207,8 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_SySD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_SySD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_Documentation"/>
-        <ecsel-dr-AH:refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_IDD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_Documentation"/>
+        <refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_IDD"/>
     </owl:NamedIndividual>
     
 
@@ -2207,8 +2218,8 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_SySDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation_document"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_Design_Description_SySDD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_Documentation"/>
-        <ecsel-dr-AH:refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_SySD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_Documentation"/>
+        <refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_SySD"/>
     </owl:NamedIndividual>
     
 
@@ -2217,7 +2228,7 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_service"/>
-        <ecsel-dr-AH:isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_Documentation"/>
+        <isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2234,8 +2245,8 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_IDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_IDD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_Documentation"/>
-        <ecsel-dr-AH:refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_SD"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_Documentation"/>
+        <refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_SD"/>
     </owl:NamedIndividual>
     
 
@@ -2244,7 +2255,7 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_SD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_SD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_Documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2253,7 +2264,7 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_service"/>
-        <ecsel-dr-AH:isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_Documentation"/>
+        <isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2270,8 +2281,8 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_IDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_IDD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_Documentation"/>
-        <ecsel-dr-AH:refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_SD"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_Documentation"/>
+        <refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_SD"/>
     </owl:NamedIndividual>
     
 
@@ -2280,7 +2291,7 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_SD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_SD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_Documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2291,11 +2302,11 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_core_service"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_service"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service"/>
-        <ecsel-dr-AH:hasMethod rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method_GetDefaultStoreEntriesForConsumerBasedOnClientCertificate"/>
-        <ecsel-dr-AH:hasMethod rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method_GetDefaultStoreEntriesForConsumerBasedOnPath"/>
-        <ecsel-dr-AH:hasMethod rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method_GetStoreEntriesForConsumerServicePairBasedOnClientCertificate"/>
-        <ecsel-dr-AH:hasMethod rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method_GetStoreEntriesForConsumerServicePairBasedOnPath"/>
-        <ecsel-dr-AH:isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_Documentation"/>
+        <hasMethod rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method_GetDefaultStoreEntriesForConsumerBasedOnClientCertificate"/>
+        <hasMethod rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method_GetDefaultStoreEntriesForConsumerBasedOnPath"/>
+        <hasMethod rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method_GetStoreEntriesForConsumerServicePairBasedOnClientCertificate"/>
+        <hasMethod rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method_GetStoreEntriesForConsumerServicePairBasedOnPath"/>
+        <isAHServiceDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2312,8 +2323,8 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_IDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_IDD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_Documentation"/>
-        <ecsel-dr-AH:refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_SD"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_Documentation"/>
+        <refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_SD"/>
     </owl:NamedIndividual>
     
 
@@ -2322,7 +2333,7 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_SD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_SD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_Documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2331,7 +2342,7 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_service"/>
-        <ecsel-dr-AH:hasInformationModel rdf:resource="http://www.w3id.org/ecsel-dr-AH#SystemRecord"/>
+        <hasInformationModel rdf:resource="http://www.w3id.org/ecsel-dr-AH#SystemRecord"/>
     </owl:NamedIndividual>
     
 
@@ -2364,8 +2375,8 @@ Supports a service registry functionality based on DNS and DNS-SD</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_system"/>
-        <ecsel-dr-AH:isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_Documentation"/>
-        <ecsel-dr-AH:produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService"/>
+        <isAHSystemDocumentedBy rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_Documentation"/>
+        <produces rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService"/>
         <rdfs:comment xml:lang="en">The SystemRegistry system is used to provide a local cloud storage holding the information on which systems are registered with a local cloud, meta-data of these registered systems and the services these systems are designed to consume. 
 The SystemRegistry system holds for the local cloud unique system identities for systems deployed within the Arrowhead Framework local cloud.
 This registry in combination with the DeviceRegistry is necessary to create a chain of trust from a hardware device to a hosted software system and its associated services.</rdfs:comment>
@@ -2385,8 +2396,8 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_SySD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_SySD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_Documentation"/>
-        <ecsel-dr-AH:refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService_IDD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_Documentation"/>
+        <refersToIDD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService_IDD"/>
     </owl:NamedIndividual>
     
 
@@ -2395,8 +2406,8 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_SySDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_SySDD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_Documentation"/>
-        <ecsel-dr-AH:refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_SySD"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_Documentation"/>
+        <refersToSySD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_SySD"/>
     </owl:NamedIndividual>
     
 
@@ -2415,10 +2426,10 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_Documentation">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_documentation"/>
-        <ecsel-dr-AH:documents rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService"/>
-        <ecsel-dr-AH:hasPart rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_IDD"/>
-        <ecsel-dr-AH:hasPart rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_SD"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_Documentation"/>
+        <documents rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService"/>
+        <hasPart rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_IDD"/>
+        <hasPart rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_SD"/>
     </owl:NamedIndividual>
     
 
@@ -2427,8 +2438,8 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_IDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_IDD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_Documentation"/>
-        <ecsel-dr-AH:refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_SD"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_Documentation"/>
+        <refersToSD rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_SD"/>
     </owl:NamedIndividual>
     
 
@@ -2437,7 +2448,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_SD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationServcie_SD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_Documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2445,7 +2456,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#AH_local_cloud -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_local_cloud">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_local_cloud"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_Local_Cloud"/>
     </owl:NamedIndividual>
     
 
@@ -2463,7 +2474,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_documentation"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2481,7 +2492,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation"/>
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2490,7 +2501,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation"/>
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_documentation"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2500,22 +2511,22 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Arrowhead">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Arrowhead"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service-oriented_Architecture"/>
-        <ecsel-dr-AH:definesCompliantDocumentation rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
-        <ecsel-dr-AH:definesCompliantDocumentation rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation"/>
-        <ecsel-dr-AH:definesCompliantDocumentation rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation"/>
-        <ecsel-dr-AH:definesCompliantService rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service"/>
-        <ecsel-dr-AH:definesCompliantSystem rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system"/>
-        <ecsel-dr-AH:definesCompliantSystemArchitecture rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_local_cloud"/>
-        <ecsel-dr-AH:hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#Autonomy"/>
-        <ecsel-dr-AH:hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#Late_binding"/>
-        <ecsel-dr-AH:hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#Loose_coupling"/>
-        <ecsel-dr-AH:hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#Pull_and_Push_Behavior"/>
-        <ecsel-dr-AH:hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_discoverability"/>
-        <ecsel-dr-AH:hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#UsageOfExistingStandardizedSoAProtocols"/>
-        <ecsel-dr-AH:hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#UsesDataEncodingTechnologies"/>
-        <ecsel-dr-AH:hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#UsesDataEncryption"/>
-        <ecsel-dr-AH:hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#UsesDocumentedDataSemantics"/>
-        <ecsel-dr-AH:hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#UsesDocumentedDataStructures"/>
+        <definesCompliantDocumentation rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
+        <definesCompliantDocumentation rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation"/>
+        <definesCompliantDocumentation rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation"/>
+        <definesCompliantService rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service"/>
+        <definesCompliantSystem rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system"/>
+        <definesCompliantSystemArchitecture rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_local_cloud"/>
+        <hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#Autonomy"/>
+        <hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#Late_binding"/>
+        <hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#Loose_coupling"/>
+        <hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#Pull_and_Push_Behavior"/>
+        <hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_discoverability"/>
+        <hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#UsageOfExistingStandardizedSoAProtocols"/>
+        <hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#UsesDataEncodingTechnologies"/>
+        <hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#UsesDataEncryption"/>
+        <hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#UsesDocumentedDataSemantics"/>
+        <hasProperty rdf:resource="http://www.w3id.org/ecsel-dr-AH#UsesDocumentedDataStructures"/>
     </owl:NamedIndividual>
     
 
@@ -2531,8 +2542,8 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComSecTech_DTLS -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComSecTech_DTLS">
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_security_mechanism"/>
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
     </owl:NamedIndividual>
     
 
@@ -2540,8 +2551,8 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComSecTech_TLS -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComSecTech_TLS">
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_security_mechanism"/>
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
     </owl:NamedIndividual>
     
 
@@ -2549,7 +2560,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTech_BluetoothLowEnergy -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTech_BluetoothLowEnergy">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Data_link_and_media_access_technology"/>
     </owl:NamedIndividual>
     
@@ -2558,7 +2569,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTech_EtherCAT -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTech_EtherCAT">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Data_link_and_media_access_technology"/>
     </owl:NamedIndividual>
     
@@ -2567,7 +2578,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTech_Ethernet -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTech_Ethernet">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Data_link_and_media_access_technology"/>
     </owl:NamedIndividual>
     
@@ -2576,7 +2587,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTech_IEEE802_11_WLAN -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTech_IEEE802_11_WLAN">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Data_link_and_media_access_technology"/>
     </owl:NamedIndividual>
     
@@ -2585,7 +2596,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTech_IEEE802_15_4_WPAN -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTech_IEEE802_15_4_WPAN">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Data_link_and_media_access_technology"/>
     </owl:NamedIndividual>
     
@@ -2594,7 +2605,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTech_ProfiNet -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTech_ProfiNet">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Data_link_and_media_access_technology"/>
     </owl:NamedIndividual>
     
@@ -2603,7 +2614,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTransProt_AMQP -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTransProt_AMQP">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Transfer_protocol"/>
         <rdfs:label xml:lang="en">Advanced Message Queuing Protocol</rdfs:label>
     </owl:NamedIndividual>
@@ -2613,7 +2624,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTransProt_CoAP -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTransProt_CoAP">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Transfer_protocol"/>
     </owl:NamedIndividual>
     
@@ -2622,7 +2633,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTransProt_DDS -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTransProt_DDS">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Transfer_protocol"/>
     </owl:NamedIndividual>
     
@@ -2631,7 +2642,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTransProt_JMS -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTransProt_JMS">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Transfer_protocol"/>
         <rdfs:comment xml:lang="en">The Java Message Service (JMS) API is a Java message-oriented middleware API for sending messages between two or more clients.[1] It is an implementation to handle the producer–consumer problem. JMS is a part of the Java Platform, Enterprise Edition (Java EE), and was defined by a specification developed at Sun Microsystems, but which has since been guided by the Java Community Process.[2] It is a messaging standard that allows application components based on Java EE to create, send, receive, and read messages. It allows the communication between different components of a distributed application to be loosely coupled, reliable, and asynchronous</rdfs:comment>
         <rdfs:label xml:lang="en">Java Message Service</rdfs:label>
@@ -2642,7 +2653,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTransProt_MQTT -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTransProt_MQTT">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Transfer_protocol"/>
     </owl:NamedIndividual>
     
@@ -2651,7 +2662,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTransProt_REST_WS -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTransProt_REST_WS">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Transfer_protocol"/>
         <rdfs:comment xml:lang="en">A specific subset of http methods fulfilling the requirements of &quot;RESTful services&quot;.</rdfs:comment>
     </owl:NamedIndividual>
@@ -2661,7 +2672,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <!-- http://www.w3id.org/ecsel-dr-AH#ComTransProt_UPCUA_Binary -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#ComTransProt_UPCUA_Binary">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Transfer_protocol"/>
     </owl:NamedIndividual>
     
@@ -2672,7 +2683,7 @@ This registry in combination with the DeviceRegistry is necessary to create a ch
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Communication_Profile_CP">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation_document"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Profile_CP"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2716,7 +2727,7 @@ Metadata con contain a DeviceID.
     <!-- http://www.w3id.org/ecsel-dr-AH#IPv4 -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#IPv4">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Point-to-Point_communication_technology"/>
     </owl:NamedIndividual>
     
@@ -2725,7 +2736,7 @@ Metadata con contain a DeviceID.
     <!-- http://www.w3id.org/ecsel-dr-AH#IPv6 -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#IPv6">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Point-to-Point_communication_technology"/>
     </owl:NamedIndividual>
     
@@ -2736,7 +2747,7 @@ Metadata con contain a DeviceID.
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Interface_Design_Description_IDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation_document"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Interface_Design_Description_IDD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2770,7 +2781,7 @@ Metadata con contain a DeviceID.
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_DeviceDiscovery_Lookup">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService"/>
         <rdfs:comment xml:lang="en">The Lookup function is used to find a device. The instance parameter contains information to find the device.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -2780,7 +2791,7 @@ Metadata con contain a DeviceID.
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_DeviceDiscovery_Publish">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService"/>
         <rdfs:comment xml:lang="en">The Publish function is used to register a device. The device will contain a symbolic name. The instance parameter represents the endpoint information that should be registered.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -2790,7 +2801,7 @@ Metadata con contain a DeviceID.
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_DeviceDiscovery_Unpublish">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService"/>
         <rdfs:comment>The Unpublish function is used to unregister a device that no longer should be used. The instance parameter contains information necessary to find the device that should be removed.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -2800,7 +2811,7 @@ Metadata con contain a DeviceID.
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_Generate">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService"/>
     </owl:NamedIndividual>
     
 
@@ -2841,7 +2852,7 @@ Metadata con contain a DeviceID.
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_InterCloudAuthRequest">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService"/>
         <rdfs:comment xml:lang="en">by means of this method, a service producer can authorize a software system to use the service it produces. If the service producer authorizes the software system, this software system becomes a service consumer of this service. 
 The communication of the authorization query and answer is conducted by the Authentication and Authorization system (and not directly between the service producer and the querying software system).</rdfs:comment>
     </owl:NamedIndividual>
@@ -2852,7 +2863,7 @@ The communication of the authorization query and answer is conducted by the Auth
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_IntraCloudAuthRequest">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService"/>
         <rdfs:comment xml:lang="en">by means of this method, the identity of a system can be verified.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -2862,7 +2873,7 @@ The communication of the authorization query and answer is conducted by the Auth
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_Lookup">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService"/>
         <rdfs:comment xml:lang="en">The Lookup method is used to find and translate a symbolic service name into a physical endpoint, for example an IP address and a port.
 The query parameter is used to request a subset of all the registered services fulfilling the demand of the user of the service.
 The returned listing contains service endpoints that have been fulfilling the query.
@@ -2883,7 +2894,7 @@ The returned listing contains service endpoints that have been fulfilling the qu
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_SystemDiscovery_Lookup">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService"/>
         <rdfs:comment xml:lang="en">The lookup method is used to find and translate a symbolic system name into a physical endpoint, IP address, and a port
 The query parameter is used to request a subset of all the registered systems in the SystemRegistrysystem based on a specified criteria</rdfs:comment>
     </owl:NamedIndividual>
@@ -2894,7 +2905,7 @@ The query parameter is used to request a subset of all the registered systems in
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_SystemDiscovery_Publish">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService"/>
         <rdfs:comment xml:lang="en">The publish method is used to register a system
 The systems will contain a symbolic name as well as a physical endpoint
 The instance parameter represents the endpoint information that should be registered</rdfs:comment>
@@ -2906,7 +2917,7 @@ The instance parameter represents the endpoint information that should be regist
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_SystemDiscovery_Unpublish">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService"/>
         <rdfs:comment xml:lang="en">The unpublishmethod is used to unregister a system that no longer should be used
 The instance parameter contains information necessary to find the system to be removed</rdfs:comment>
     </owl:NamedIndividual>
@@ -2917,7 +2928,7 @@ The instance parameter contains information necessary to find the system to be r
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_publish_service">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService"/>
         <rdfs:comment xml:lang="en">The publish method is used to register services. The services will contain various metadata as well as a physical endpoint. 
 The various parameters are representing the endpoint information that should be registered. (Source: Arrowhead ServiceDiscovery Service G4.0 SD.docx)</rdfs:comment>
     </owl:NamedIndividual>
@@ -2928,7 +2939,7 @@ The various parameters are representing the endpoint information that should be 
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Method_unpublish_service">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Method"/>
-        <ecsel-dr-AH:isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService"/>
+        <isMethodOf rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService"/>
         <rdfs:comment xml:lang="en">The unpublish method is used to unregister service instances that were previously registered in the Registry. 
 The instance parameter is representing the endpoint information that should be removed.</rdfs:comment>
     </owl:NamedIndividual>
@@ -2956,7 +2967,7 @@ The instance parameter is representing the endpoint information that should be r
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#SemanticProfile_DeviceRecord">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Semantic_Profile_SP"/>
-        <ecsel-dr-AH:documentsAHServiceInformationModel rdf:resource="http://www.w3id.org/ecsel-dr-AH#DeviceRecord"/>
+        <documentsAHServiceInformationModel rdf:resource="http://www.w3id.org/ecsel-dr-AH#DeviceRecord"/>
     </owl:NamedIndividual>
     
 
@@ -2965,7 +2976,7 @@ The instance parameter is representing the endpoint information that should be r
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#SemanticProfile_SystemRecord">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Semantic_Profile_SP"/>
-        <ecsel-dr-AH:documentsAHServiceInformationModel rdf:resource="http://www.w3id.org/ecsel-dr-AH#SystemRecord"/>
+        <documentsAHServiceInformationModel rdf:resource="http://www.w3id.org/ecsel-dr-AH#SystemRecord"/>
     </owl:NamedIndividual>
     
 
@@ -2974,7 +2985,7 @@ The instance parameter is representing the endpoint information that should be r
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Semantic_Profile_SP">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Semantic_Profile_SP"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
     </owl:NamedIndividual>
     
 
@@ -2984,7 +2995,7 @@ The instance parameter is representing the endpoint information that should be r
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#Service_Description_SD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation_document"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Service_Description_SD"/>
-        <ecsel-dr-AH:isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
+        <isPartOfServiceDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"/>
     </owl:NamedIndividual>
     
 
@@ -3002,7 +3013,7 @@ The instance parameter is representing the endpoint information that should be r
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#System-of-Systems_Description_SoSD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation_document"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System-of-Systems_Description_SoSD"/>
-        <ecsel-dr-AH:isPartOfSoSDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation"/>
+        <isPartOfSoSDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation"/>
     </owl:NamedIndividual>
     
 
@@ -3012,7 +3023,7 @@ The instance parameter is representing the endpoint information that should be r
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#System-of-Systems_Design_Description_SoSDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation_document"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System-of-Systems_Design_Description_SoSDD"/>
-        <ecsel-dr-AH:isPartOfSoSDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation"/>
+        <isPartOfSoSDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation"/>
     </owl:NamedIndividual>
     
 
@@ -3031,7 +3042,7 @@ The instance parameter is representing the endpoint information that should be r
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#System_Description_SySD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation_document"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_Description_SySD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation"/>
     </owl:NamedIndividual>
     
 
@@ -3041,7 +3052,7 @@ The instance parameter is representing the endpoint information that should be r
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#System_Design_Description_SySDD">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation_document"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_Design_Description_SySDD"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation"/>
     </owl:NamedIndividual>
     
 
@@ -3049,7 +3060,7 @@ The instance parameter is representing the endpoint information that should be r
     <!-- http://www.w3id.org/ecsel-dr-AH#TCP -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#TCP">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#End-to-End_communication_technology"/>
     </owl:NamedIndividual>
     
@@ -3058,7 +3069,7 @@ The instance parameter is representing the endpoint information that should be r
     <!-- http://www.w3id.org/ecsel-dr-AH#UDP -->
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#UDP">
-        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_technology"/>
+        <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#Communication_Technology"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#End-to-End_communication_technology"/>
     </owl:NamedIndividual>
     
@@ -3124,7 +3135,7 @@ The instance parameter is representing the endpoint information that should be r
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#authorization.wadl">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_WADL"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_Documentation"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -3133,7 +3144,7 @@ The instance parameter is representing the endpoint information that should be r
 
     <owl:NamedIndividual rdf:about="http://www.w3id.org/ecsel-dr-AH#orchestrator.wadl">
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_Orchestrator_WADL"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_Documentation"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -3144,7 +3155,7 @@ The instance parameter is representing the endpoint information that should be r
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistry_WADL"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_system_documentation_document"/>
         <rdf:type rdf:resource="http://www.w3id.org/ecsel-dr-AH#System_WebApplicationDescription_WADL"/>
-        <ecsel-dr-AH:isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_Documentation"/>
+        <isPartOfSystemDoc rdf:resource="http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_Documentation"/>
     </owl:NamedIndividual>
     
 
@@ -3183,19 +3194,6 @@ The instance parameter is representing the endpoint information that should be r
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_IDD">
         <rdfs:comment xml:lang="de">Interface Design Description (IDD) of the Arrowhead mandatory core service Token Generation Service which is provided by the mandatory core system Authorization System.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_local_cloud">
-        <rdfs:comment xml:lang="en">Remark HB (2019-03-25): 
-the relation between a local network and an AH local cloud should be discussed in more detail. 
-Sample questions: 
-- must all devices of an AH local cloud be part of one local network? Or can an AH local cloud be spread over different local networks? (Assumption: all devices must be part of the same local network. Justification??)
-- Same question for subnets. Large automation systems are often devided into several subnets. Is it possible that an AH local cloud spreads over several subnets?
-- What is the role of the domain in this context? What is the relation between domain (in sense of IP protocol) and a local network? Should the questions above better be asked for domains instead for local networks?</rdfs:comment>
-        <rdfs:comment xml:lang="en">An Arrowhead Local Cloud consists of one or several devices which are connected by an appropriate communication technology (typically a TCP/IP based local network on arbitrary wired or wireless data link and media access layer). 
-One instance of each of the three mandatory AH core systems is running on one of the devices. 
-On each device at least one AH system is running offering and/or consuming AH services.</rdfs:comment>
-        <rdfs:comment xml:lang="de">An Arrowhead Local Cloud is a self-contained network with the three mandatory core systems deployed and at least one application system deployed. 
-(Source: Arrowhead Device Registry Presentation 09/2017)</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3id.org/ecsel-dr-AH#AH_service">
         <rdfs:comment xml:lang="en">Arrowhead compliant service - service that is provided within an Arrowhead environment (i.e., service that is provided by an Arrowhead compliant software system that runs on a device within an Arrowhead local cloud; service is registered at the AH service registry system via its method for service registration and can be discovered and consumed by other Arrowhead compliant software systems.</rdfs:comment>
